@@ -1,0 +1,174 @@
+.login_section {
+  background-color: #F8F8F8;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: var(--fontDefault);
+}
+
+form {
+  margin-top: -90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+form .input_field {
+  width: 100%;
+  position: relative;
+}
+
+form .input_field label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  letter-spacing: 1px;
+  font-family: var(--fontSpecial);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--gray-300);
+  transition: all ease 0.1s;
+}
+
+form .input_field input {
+  background-color: var(--gray-200);
+  font-family: var(--fontSpecial);
+  font-size: 1.1em;
+  width: 330px;
+  height: 55px;
+  padding: 15px 8px 1px 8px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+form .input_field input:focus {
+  outline: none;
+  border: 2px solid black;
+} 
+
+form .input_field input:valid ~ label,
+form .input_field input:focus ~ label {
+  transform: translate(-11px, -12px);
+  font-size: 0.7em;
+}
+
+.social-media-login {
+  margin-top: 30px;
+  width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.social-media-login .media-item {
+  width: 103px;
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+
+.social-media-login .media-item:hover {
+  opacity: 0.9;
+}
+
+.social-media-login .fb-item{
+  background-color: var(--blue-fb);
+  color: var(--gray-200);
+}
+
+.social-media-login .apple-item {
+  background-color: var(--black-200);
+  color: var(--gray-200);
+}
+
+.save-login {
+  margin-top: 30px;
+  user-select: none;
+  width: 330px;
+  color: var(--black-200);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.save-login input[type='checkbox'] {
+  appearance: none;
+  background-color: var(--gray-200);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.save-login label {
+  cursor: pointer;
+}
+
+.save-login input[type='checkbox']:checked {
+  background-color: var(--red-riot);
+}
+
+.save-login .check-icon {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  left: 3px;
+  position: absolute;
+  color: var(--gray-200);
+}
+
+.login-sucess {
+  width: 4.5em;
+  height: 4.5em;
+  border: 3px solid var(--gray-200);
+  border-radius: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.login-sucess .icon {
+  width: 1.8em;
+  height: 1.8em;
+  color: var(--gray-200);
+}
+
+.other-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-actions > div {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--gray-300);
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.other-actions div:hover {
+  color: var(--black-200);
+}
+
+.other-actions div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+}
