@@ -13,7 +13,7 @@ export default function Main() {
       <section className="page">
         <Login />
         <div className="img_login_section">
-          <video autoPlay lopp muted disablePictureInPicture>
+          <video autoPlay loop muted disablePictureInPicture>
             <source src={Urf} type='video/webm' />
           </video>
         </div>
