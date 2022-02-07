@@ -3,7 +3,7 @@ import React from 'react';
 import { FaUserAlt } from 'react-icons/fa'
 import Login from '../login';
 
-import Urf from '../../assets/screens/urf.webm'
+import ScreenOne from '../../assets/screens/stars-guardians.webm'
 
 import './Main.css'
 
@@ -13,8 +13,8 @@ export default function Main() {
       <section className="page">
         <Login />
         <div className="img_login_section">
-          <video autoPlay lopp muted disablePictureInPicture>
-            <source src={Urf} type='video/webm' />
+          <video autoPlay loop disablePictureInPicture >
+            <source src={ScreenOne} type='video/webm' />
           </video>
         </div>
       </section>
