@@ -12,7 +12,7 @@ h2 {
 }
 
 form {
-  margin-top: -90px;
+  margin-top: -4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,7 @@ form .input_field input:focus ~ label {
 }
 
 .social-media-login {
-  margin-top: 30px;
+  margin-top: 2em;
   width: 330px;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@ form .input_field input:focus ~ label {
 }
 
 .social-media-login .media-item:hover {
-  opacity: 0.9;
+  opacity: 1.2;
 }
 
 .social-media-login .fb-item{
@@ -94,7 +94,7 @@ form .input_field input:focus ~ label {
 }
 
 .save-login {
-  margin-top: 30px;
+  margin-top: 2em;
   user-select: none;
   width: 330px;
   color: var(--black-200);
